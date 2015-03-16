@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# stop on first error
+set -e
+
+
 cd /vagrant
 
 
@@ -10,7 +14,7 @@ then
 
 	# get hadoop 2.6
 	wget http://ftp.piotrkosoft.net/pub/mirrors/ftp.apache.org/hadoop/common/hadoop-2.6.0/hadoop-2.6.0.tar.gz
-else 
+else
 	wget $1/jdk-8u40-linux-x64.rpm
 	wget $1/hadoop-2.6.0.tar.gz
 fi

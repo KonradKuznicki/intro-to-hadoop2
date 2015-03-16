@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# stop on first error
+set -e
+
 # dir for all of it
 mkdir -p /opt/yarn
 cd /opt/yarn
@@ -37,5 +40,3 @@ sudo su - hdfs -c "/opt/yarn/hadoop-2.6.0/bin/hdfs namenode -format"
 # copy start and stop daemons
 sudo su - vagrant -c "cp /vagrant/provisioning/files/start.sh ~/"
 sudo su - vagrant -c "cp /vagrant/provisioning/files/stop.sh  ~/"
-
-

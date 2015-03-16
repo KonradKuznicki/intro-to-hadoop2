@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# stop on first error
+set -e
+
 # install java
 rpm -ivh /vagrant/jdk-8u40-linux-x64.rpm
 

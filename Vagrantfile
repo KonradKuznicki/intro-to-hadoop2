@@ -12,12 +12,13 @@ Vagrant.configure(2) do |config|
   config.vm.network "forwarded_port", guest: 9000, host: 9000
   config.vm.network "forwarded_port", guest: 19888, host: 19888
   config.vm.network "forwarded_port", guest: 50070, host: 50070
+  config.vm.network "forwarded_port", guest: 50075, host: 50075
   config.vm.network "forwarded_port", guest: 50090, host: 50090
 
   config.vm.provider "virtualbox" do |vb|
     vb.name = "hadoop_all_in_one" # name in virtualbox gui
-    vb.memory = "8192" 
-    vb.cpus = 4
+    vb.memory = "2048"
+    vb.cpus = 2
   end
 
   # setup virtual machine
