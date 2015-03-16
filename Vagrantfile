@@ -3,8 +3,9 @@
 
 Vagrant.configure(2) do |config|
 
-  # preinstalled linux distribution 
-  config.vm.box = "chef/centos-7.0"
+  # preinstalled linux distribution
+  config.vm.box = "centos7"
+  config.vm.box_url = "http://localhost:8000/centos7.box"
 
   # ports to forward to host
   config.vm.network "forwarded_port", guest: 8088, host: 8088
@@ -22,6 +23,6 @@ Vagrant.configure(2) do |config|
   end
 
   # setup virtual machine
-  config.vm.provision "shell", path: "provisioning/main.sh" 
+  config.vm.provision "shell", path: "provisioning/main.sh"
 
 end
