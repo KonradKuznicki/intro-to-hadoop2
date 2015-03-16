@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# stop on first error
-set -e
-
 # dir for all of it
 mkdir -p /opt/yarn
 cd /opt/yarn

@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# stop on first error
-set -e
-
-
 cd /vagrant
 
 
