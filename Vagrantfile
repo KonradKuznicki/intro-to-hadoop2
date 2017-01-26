@@ -4,7 +4,7 @@
 Vagrant.configure(2) do |config|
 
   # preinstalled linux distribution
-  config.vm.box = "chef/centos-7.0"
+  config.vm.box = "centos7"
   # config.vm.box_url = "http://10.0.2.84:8000/centos7.box"
 
   # ports to forward to host
@@ -18,8 +18,8 @@ Vagrant.configure(2) do |config|
 
   config.vm.provider "virtualbox" do |vb|
     vb.name = "hadoop_all_in_one" # name in virtualbox gui
-    vb.memory = "2048"
-    vb.cpus = 2
+    vb.memory = "8192"
+    vb.cpus = 4
   end
 
   # setup virtual machine

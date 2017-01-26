@@ -1,0 +1,12 @@
+.classpath
+	.project
+	.settings/
+	first/.classpath
+	first/.gitignore
+	first/.project
+	first/.settings/
+	hadoop-2.6.0.tar.gz
+	jdk-8u40-linux-x64.rpm
+	provisioning/files/centos7.box
+	provisioning/files/hadoop-2.6.0.tar.gz
+	provisioning/files/jdk-8u40-linux-x64.rpm
